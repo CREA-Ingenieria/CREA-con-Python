@@ -84,8 +84,8 @@ def eliminarBloques():
 
 # Agregar efectos de sonido
 try:
-    sonidoBloque = pygame.mixer.Sound('Sonidos/Brick.wav')
-    sonidoPerder = pygame.mixer.Sound('Sonidos/Downer01.wav')
+    sonidoBloque = pygame.mixer.Sound('sonidos/Brick.wav')
+    sonidoPerder = pygame.mixer.Sound('sonidos/Downer01.wav')
 except pygame.error:
     print("No se pudieron cargar los archivos de sonido.")
     sonidoBloque = None
