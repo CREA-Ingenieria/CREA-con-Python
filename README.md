@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://github.com/user-attachments/assets/ddab3504-9c6c-4781-b1ed-b53cd039a010" alt="Banner" style="width:100%;"/>
+<img src="https://github.com/CREA-UNIANDES/Rompe-Bloques/blob/main/Docs/Banner.png" alt="Banner" style="width:100%;"/>
   ¡CREA con Python: Videojuegos para principiantes!
 </h1>
 
@@ -45,22 +45,22 @@ Puedes crear diferentes versiones temáticas como:
 ### CREA 🧩
 |Una versión simple alusiva al laboratorio CREA.|
 |:-:|
-| <img src="https://github.com/user-attachments/assets/08952d15-853e-46b1-a7fd-e514d82e44c8" width="560"> |
+| <img src="https://github.com/CREA-UNIANDES/Rompe-Bloques/blob/main/Docs/CREA_BLOQUES_AMARILLO.png" width="560"> |
 
 ### Espacio ✨
 |Una versión situada en el espacio.|
 |:-:|
-| <img src="https://github.com/user-attachments/assets/57cdc660-f618-4850-b757-5ae64a427615" width="560"> |
+| <img src="https://github.com/CREA-UNIANDES/Rompe-Bloques/blob/main/Docs/Espacio.png" width="560"> |
 
 ### Mundo Abierto 🌲
 |Una versión más terricola con diferentes materiales.|
 |:-:|
-| <img src="https://github.com/user-attachments/assets/e81ae584-1ddb-4632-8791-1f6ff53a5472" width="560"> |
+| <img src="https://github.com/CREA-UNIANDES/Rompe-Bloques/blob/main/Docs/MUNDO.png" width="560"> |
 
 ### Cueva 🔥
 |Una misteriosa versión subterranea.|
 |:-:|
-| <img src="https://github.com/user-attachments/assets/90345302-b04f-4b81-9b90-b0c08e0f7abf" width="560"> |
+| <img src="https://github.com/CREA-UNIANDES/Rompe-Bloques/blob/main/Docs/LAVA.png" width="560"> |
 
 ---
 
