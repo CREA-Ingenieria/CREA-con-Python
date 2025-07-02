@@ -129,7 +129,7 @@ while ejecutando:
     if vidas == 0:
         fuente = pygame.font.Font(None, 40)
         texto = fuente.render(f'JUEGO TERMINADO', 1, NEGRO)
-        pantalla.blit(texto, (ANCHO/4, 350))
+        pantalla.blit(texto, (ANCHO/3, 350))
         fuente = pygame.font.Font(None, 40)
         texto = fuente.render(f'PRESIONA ESPACIO PARA JUGAR', 1, NEGRO)
         pantalla.blit(texto, (ANCHO/5, 450))
