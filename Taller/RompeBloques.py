@@ -74,10 +74,31 @@ todosLosBloques = pygame.sprite.Group()
 
 
 # ========== PASO 6: INSTANCIAR BLOQUES ==========
-# TODO: Crea una función instanciarBloques(columnas, filas)
-# Debe crear bloques en una cuadrícula con ciclos for anidados
-# def instanciarBloques(columnas, filas):
-#     pass
+# Instanciar Bloques
+# def instanciarBloques(c, r):
+#     for i in range(c):
+#         for j in range(r):
+#             # Determinar el tipo de bloque según la fila
+#             if j == 0 or j == 1:  # Filas 1 y 2
+#                 bloque = BloqueA()
+#             elif j == 2 or j == 3:  # Filas 3 y 4
+#                 bloque = BloqueB()
+#             elif j == 4 or j == 5:  # Filas 5 y 6
+#                 bloque = BloqueC()
+#             else:  # Filas 7 y 8
+#                 bloque = BloqueD()
+            
+#             bloque.rect.x = 20 + i*110
+#             bloque.rect.y = 20 + j*30
+#             todosLosBloques.add(bloque)
+#             todosLosSprites.add(bloque)
+
+# instanciarBloques(7, 8)
+
+# def eliminarBloques():
+#     for bloque in todosLosBloques:
+#         bloque.kill()
+
 
 # TODO: Llama la función para crear 7 columnas y 8 filas
 # instanciarBloques(7, 8)
@@ -119,26 +140,65 @@ while ejecutando:
     #     COMPLETAR...
 
     # ========== PASO 7: MOSTRAR VIDAS Y PUNTUACIÓN ==========
-    # TODO: Crea una fuente y muestra la puntuación
+    # Puntuación
+    
     # fuente = pygame.font.Font(None, 40)
     # texto = fuente.render(f'Puntuación: {puntuacion}', 1, NEGRO)
     # pantalla.blit(texto, (20, ALTO-30))
-
-    # TODO: Muestra las vidas
+    # # Vidas
+    # fuente = pygame.font.Font(None, 40)
     # texto = fuente.render(f'Vidas: {vidas}', 1, NEGRO)
     # pantalla.blit(texto, (ANCHO-120, ALTO-30))
 
-    # ========== PASO 8: COLISIONES ==========
-    # TODO: Implementa lógica de movimiento de bola (si iniciar == True)
-    # TODO: Implementa rebotes en paredes
-    # TODO: Implementa colisión bola-barra
-    # TODO: Implementa colisión bola-bloques
-    # TODO: Descomenta cuando tengas todas las piezas
-    # if iniciar:
-    #     todosLosSprites.update()
-    #     # Rebotes en paredes...
-    #     # Colisiones...
+    # if vidas == 0:
+    #     fuente = pygame.font.Font(None, 40)
+    #     texto = fuente.render(f'JUEGO TERMINADO', 1, NEGRO)
+    #     pantalla.blit(texto, (ANCHO/3, 350))
+    #     fuente = pygame.font.Font(None, 40)
+    #     texto = fuente.render(f'PRESIONA ESPACIO PARA JUGAR', 1, NEGRO)
+    #     pantalla.blit(texto, (ANCHO/5, 450))
+    # if len(todosLosBloques) == 0:
+    #     fuente = pygame.font.Font(None, 40)
+    #     texto = fuente.render(f'¡GANASTE!', 1, NEGRO)
+    #     pantalla.blit(texto, (ANCHO-480, 350))
+    #     bola.posicionInicial()
+    #     iniciar = False
 
+    # if iniciar:
+    #     # Actualizar los Sprites
+    #     todosLosSprites.update()
+    #     if vidas == 0:
+    #         vidas = 3
+    #         puntuacion = 0
+    #         eliminarBloques()
+    #         instanciarBloques(7, 8)
+    #     if bola.rect.right >= ANCHO or bola.rect.left <= 0:
+    #         bola.rebotarX()
+    #     if bola.rect.top <= 0:
+    #         bola.rebotarY()
+    #     if bola.rect.y >= ALTO - 40:
+    #         if sonidoPerder:
+    #             sonidoPerder.play()
+    #         bola.posicionInicial()
+    #         vidas -= 1
+    #         iniciar = False
+
+    #     # Colisión con la barra
+    #     if bola.rect.colliderect(barra.rect):
+    #         if abs(barra.rect.top - bola.rect.bottom) < 8:
+    #             bola.rebotarY()
+    #         if abs(barra.rect.left - bola.rect.right) < 8 or abs(barra.rect.right - bola.rect.left) < 8:
+    #             bola.rebotarX()
+        
+    #     # Colisión con los bloques
+    #     bolaImpactoLista = pygame.sprite.spritecollide(bola, todosLosBloques, False)
+    #     for bloque in bolaImpactoLista:
+    #         if sonidoBloque:
+    #             sonidoBloque.play()
+    #         bola.rebotarY()
+    #         # Sumar puntos según el tipo de bloque
+    #         puntuacion += bloque.puntos
+    #         bloque.kill()
 
     pygame.display.update()
     
