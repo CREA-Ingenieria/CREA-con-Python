@@ -2,13 +2,13 @@ import pygame
 
 # ========== PASO 3: CREAR LA BARRA ==========
 # TODO: Define NEGRO = (0, 0, 0)
-# NEGRO = (0, 0, 0)
+NEGRO = (0, 0, 0)
 
 # TODO: Define ANCHO = 800
-# ANCHO = 800
+ANCHO = 800
 
 # TODO: Define ALTO = 600 (o el valor que uses en RompeBloques.py)
-# ALTO = 600
+ALTO = 600
 
 # ========== CLASE BARRA ==========
 class Barra(pygame.sprite.Sprite):
@@ -17,8 +17,8 @@ class Barra(pygame.sprite.Sprite):
         super().__init__()
 
         # TODO: Opción 1 - Usar rectángulo de color (descomenta para usar)
-        # self.image = pygame.Surface([120, 20])
-        # pygame.draw.rect(self.image, NEGRO, [0, 0, 120, 20])
+        self.image = pygame.Surface([120, 20])
+        pygame.draw.rect(self.image, NEGRO, [0, 0, 120, 20])
         
         # TODO: Opción 2 - Usar imagen personalizada (descomenta para usar)
         # Reemplaza 'imagenes/barra.png' con la ruta de tu imagen
@@ -37,16 +37,12 @@ class Barra(pygame.sprite.Sprite):
         # TODO: Crea el rectángulo de colisión
         self.rect = self.image.get_rect()
 
-    # TODO: Crea la función moverDerecha()
-    # Debe:
-    # 1. Incrementar self.rect.x en 10 píxeles
-    # 2. Verificar que no salga de la pantalla (self.rect.x <= ANCHO - 120)
-    # def moverDerecha(self):
-    #     pass
+    def moverDerecha(self):
+        self.rect.x += 10
+        if self.rect.x >= (ANCHO - 120):
+            self.rect.x = ANCHO - 120
 
-    # TODO: Crea la función moverIzquierda()
-    # Debe:
-    # 1. Decrementar self.rect.x en 10 píxeles
-    # 2. Verificar que no salga de la pantalla (self.rect.x >= 0)
-    # def moverIzquierda(self):
-    #     pass
+    def moverIzquierda(self):
+        self.rect.x -= 10
+        if self.rect.x <= 0:
+            self.rect.x = 0

@@ -20,7 +20,7 @@ pygame.display.set_caption('Rompe Bloques')
 
 # ========== PASO 2: CAMBIAR COLOR DE FONDO ==========
 # TODO: Define NEGRO = (0, 0, 0)
-NEGRO = (0, 0, 0)
+COLOR = (220, 220, 220)
 
 # TODO: Define un color personalizado para el fondo
 # color_fondo = (220, 220, 220)
@@ -45,12 +45,20 @@ reloj = pygame.time.Clock()
 
 # ========== PASO 3: CREAR LA BARRA ==========
 # TODO: Descomenta la importación de Barra
-# from barra import Barra
+#from barra import Barra
 
 # TODO: Instancia la barra
-# barra = Barra()
-# barra.rect.x = (ANCHO/2) - 60
-# barra.rect.y = ALTO - 60
+#barra = Barra()
+#barra.rect.x = (ANCHO/2) - 60
+#barra.rect.y = ALTO - 60
+
+# Grupo de sprites
+todosLosSprites = pygame.sprite.Group()
+#todosLosSprites.add(barra)
+#todosLosSprites.add(bola)
+
+# Grupo de bloques
+todosLosBloques = pygame.sprite.Group()
 
 # ========== PASO 4: CREAR LA BOLA ==========
 # TODO: Descomenta la importación de Bola
@@ -64,13 +72,6 @@ reloj = pygame.time.Clock()
 # TODO: Descomenta las importaciones de bloques
 # from bloques import BloqueA, BloqueB, BloqueC, BloqueD
 
-# TODO: Crea un grupo para los bloques
-# todosLosBloques = pygame.sprite.Group()
-
-# TODO: Crea el grupo de todos los sprites
-# todosLosSprites = pygame.sprite.Group()
-# todosLosSprites.add(barra)
-# todosLosSprites.add(bola)
 
 # ========== PASO 6: INSTANCIAR BLOQUES ==========
 # TODO: Crea una función instanciarBloques(columnas, filas)
@@ -104,18 +105,18 @@ while ejecutando:
     if fondo:
         pantalla.blit(fondo, (0, 0))
     else:
-        pantalla.fill(NEGRO)
+        pantalla.fill(COLOR)
 
     # ========== PASO 3-7: DIBUJAR SPRITES Y LÓGICA ==========
     # TODO: Descomenta para dibujar la barra y bola
-    # todosLosSprites.draw(pantalla)
+    todosLosSprites.draw(pantalla)
 
     # TODO: Descomenta para manejar el movimiento de la barra
     # teclas = pygame.key.get_pressed()
     # if teclas[pygame.K_RIGHT]:
     #     barra.moverDerecha()
     # if teclas[pygame.K_LEFT]:
-    #     barra.moverIzquierda()
+    #     COMPLETAR...
 
     # ========== PASO 7: MOSTRAR VIDAS Y PUNTUACIÓN ==========
     # TODO: Crea una fuente y muestra la puntuación

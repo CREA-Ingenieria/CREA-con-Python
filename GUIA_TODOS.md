@@ -4,20 +4,20 @@ Este documento te muestra el orden correcto para completar todas las tareas (TOD
 
 ## 📋 Orden de TODOs
 
-### FASE 1: VENTANA Y COLORES (RompeBloquescopy.py)
+### FASE 1: VENTANA Y COLORES (RompeBloques.py)
 
 - **TODO 1:** Ajustar la ventana (tamaño: ANCHO y ALTO)
 - **TODO 2:** Definir colores (RGB: rojo, verde, azul)
 - **TODO 3:** Cargar una imagen de fondo personalizada
 
-### FASE 2: CREAR LA BARRA (barracopy.py)
+### FASE 2: CREAR LA BARRA (barra.py)
 
 - **TODO 2:** Declarar variables globales para el tamaño de pantalla
 - **TODO 3:** Crear la imagen de la barra
 - **TODO 4:** Crear función `moverDerecha()`
 - **TODO 5:** Crear función `moverIzquierda()`
 
-### FASE 3: CREAR LA BOLA (bolacopy.py)
+### FASE 3: CREAR LA BOLA (bola.py)
 
 - **TODO 6:** Crear la imagen de la bola
 - **TODO 7:** Crear el rectángulo de colisión
@@ -27,13 +27,13 @@ Este documento te muestra el orden correcto para completar todas las tareas (TOD
 - **TODO 11:** Hacer que la bola rebote en el eje X
 - **TODO 12:** Hacer que la bola rebote en el eje Y
 
-### FASE 4: CREAR LOS BLOQUES (bloquescopy.py)
+### FASE 4: CREAR LOS BLOQUES (bloques.py)
 
 - **TODO 13:** Crear la imagen del bloque
 - **TODO 14:** Crear el rectángulo de colisión y guardar puntos
 - **TODO 15:** Personalizar cada tipo de bloque (A, B, C, D)
 
-### FASE 5: CONECTAR TODO (RompeBloquescopy.py)
+### FASE 5: CONECTAR TODO (RompeBloques.py)
 
 - **TODO 8:** Instanciar la barra
 - **TODO 9:** Instanciar la bola
@@ -43,7 +43,7 @@ Este documento te muestra el orden correcto para completar todas las tareas (TOD
 - **TODO 19:** Posicionar el bloque en la pantalla
 - **TODO 20:** Llamar la función para crear 7 columnas y 8 filas de bloques
 
-### FASE 6: LÓGICA DEL JUEGO (RompeBloquescopy.py)
+### FASE 6: LÓGICA DEL JUEGO (RompeBloques.py)
 
 - **TODO 21:** Crear variable para controlar el movimiento de la bola
 - **TODO 22:** Detectar qué teclas están presionadas
