@@ -1,7 +1,4 @@
 import pygame
-# from barra import Barra
-# from bola import Bola
-# from bloques import BloqueA, BloqueB, BloqueC, BloqueD
 
 # ========== PASO 1: VENTANA VACÍA ==========
 pygame.init()
