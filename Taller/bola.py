@@ -17,7 +17,11 @@ class Bola(pygame.sprite.Sprite):
         """Inicializa la bola con imagen, velocidad y posición"""
         super().__init__()
 
-        # OPCIÓN 1: Usar imagen
+        # OPCIÓN 1: Usar figura geométrica
+        self.image = pygame.Surface([30,30])
+        pygame.draw.rect(self.image, COLOR, [0,0,30,30])
+        
+        # OPCIÓN 2: Usar imagen
         #try:
         #    self.image = pygame.image.load('imagenes/Moneda.png')
         #    self.image = pygame.transform.scale(self.image, (30, 30))
@@ -25,10 +29,6 @@ class Bola(pygame.sprite.Sprite):
         #    print("No se pudo cargar bola.png. Usando figura geométrica.")
         #    self.image = pygame.Surface([30,30])
         #    pygame.draw.rect(self.image, ROJO, [0,0,30,30])
-        
-        # OPCIÓN 2: Usar figura geométrica
-        self.image = pygame.Surface([30,30])
-        pygame.draw.rect(self.image, COLOR, [0,0,30,30])
         
         self.rect = self.image.get_rect()
         self.velocidad = [random.randint(3,7),random.randint(4,8)]

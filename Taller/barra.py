@@ -22,19 +22,15 @@ class Barra(pygame.sprite.Sprite):
         
         # TODO: Opción 2 - Usar imagen personalizada (descomenta para usar)
         # Reemplaza 'imagenes/barra.png' con la ruta de tu imagen
-        # try:
-        #     self.image = pygame.image.load('imagenes/barra.png')
-        #     self.image = pygame.transform.scale(self.image, (120, 20))
-        # except pygame.error:
-        #     print("No se pudo cargar barra.png. Usando rectángulo.")
-        #     self.image = pygame.Surface([120, 20])
-        #     pygame.draw.rect(self.image, NEGRO, [0, 0, 120, 20])
         
-        # VERSIÓN INICIAL: rectángulo negro
-        self.image = pygame.Surface([120, 20])
-        pygame.draw.rect(self.image, NEGRO, [0, 0, 120, 20])
+        #try:
+        #    self.image = pygame.image.load('imagenes/barra.png')
+        #    self.image = pygame.transform.scale(self.image, (120, 20))
+        #except pygame.error:
+        #    print("No se pudo cargar barra.png. Usando rectángulo.")
+        #    self.image = pygame.Surface([120, 20])
+        #    pygame.draw.rect(self.image, NEGRO, [0, 0, 120, 20])
         
-        # TODO: Crea el rectángulo de colisión
         self.rect = self.image.get_rect()
 
     def moverDerecha(self):
