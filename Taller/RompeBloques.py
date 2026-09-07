@@ -9,7 +9,7 @@ pygame.init()
 # TODO: Define ANCHO = 800
 ANCHO = 200
 
-# TODO: Define ALTO = 600
+# TODO: Define ALTO = 700
 ALTO = 100
 
 # TODO: Define Velocidad (FPS) = 60
@@ -216,6 +216,8 @@ while ejecutando:
             puntuacion += bloque.puntos
             bloque.kill()
     """
+    
+    pygame.draw.line(pantalla, NEGRO, [0, ALTO-35], [ANCHO, ALTO-35], 5)
     pygame.display.update()
     
     reloj.tick(FPS)
